@@ -1,0 +1,770 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="blocks/header ::header"></header>
+<div class="container mt-5">
+    <h1>Главная страничка</h1>
+</div>
+<div class="content">
+    <div class="container">
+        <!--breadcrumb-->
+        <link href="/bitrix/css/main/font-awesome.css?162263749528777" type="text/css" rel="stylesheet">
+        <div class="bx-breadcrumb" itemprop="http://schema.org/breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <div class="bx-breadcrumb-item">
+
+                <span>Главная</span>
+            </div><div style="clear:both"></div></div>            <!--//breadcrumb-->
+        <h1>Системный интегратор ГК ХОСТ</h1>           <style>
+        .bx-breadcrumb, h1
+        {
+            display: none !important;
+        }
+    </style>
+        <!--TOP BANNER-->
+
+        <div class="main_slider">
+            <div class="main-top-banner flexslider">
+                <ul class="slides">
+                    <li id="bx_3218110189_338" style="width: 100%; float: left; margin-right: -100%; position: relative; z-index: 1; display: none; opacity: 0;" class="">
+                        <a class="mtb-item" href="/decision/support/reestr/" style="background-image: url('/upload/resize_cache/iblock/964/1110_364_2/96432e55f187c90b71ff0cae0fe0ab49.jpg')">
+                            <div class="mtb-item-info">
+                                <div class="mtb-title">Сервис тестирования ПО из Единого реестра российских программ</div>
+                                <div class="mtb-ico-txt">
+                                    <div class="slider-icon"><img src="/upload/iblock/d21/d219d070c9b50447710d5a212c96f238.png" alt="" draggable="false"></div>                                <div>Каталог сценариев для перехода на российское программное обеспечение</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="bx_3218110189_335" style="width: 100%; float: left; margin-right: -100%; position: relative; z-index: 2; display: block; opacity: 1;" class="flex-active-slide">
+                        <a class="mtb-item" href="/monitoring-system-cms/" style="background-image: url('/upload/resize_cache/iblock/ccd/1110_364_2/ccd75431a70e4f2bb71e6e2ba07f1caa.jpg')">
+                            <div class="mtb-item-info">
+                                <div class="mtb-title">А вы знаете, что происходит в вашем ЦОД?</div>
+                                <div class="mtb-ico-txt">
+                                    <div>Система мониторинга ЦОД</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="bx_3218110189_337" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: none; z-index: 1;">
+                        <a class="mtb-item" href="/dlp/" style="background-image: url('/upload/resize_cache/iblock/2e6/1110_364_2/2e64bfce895c95a22b79ba5c0eb74387.jpg')">
+                            <div class="mtb-item-info">
+                                <div class="mtb-title">Защита конфиденциальной информации</div>
+                                <div class="mtb-ico-txt">
+                                    <div>Контроль движения данных</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="bx_3218110189_336" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: none; z-index: 1;">
+                        <a class="mtb-item" href="/maintenance-of-it/" style="background-image: url('/upload/resize_cache/iblock/404/1110_364_2/404de714bcbe473ec29c79b9f935cd11.jpg')">
+                            <div class="mtb-item-info">
+                                <div class="mtb-title">ИТ-аутсорсинг. Сопровождение ИТ-инфраструктуры</div>
+                                <div class="mtb-ico-txt">
+                                    <div>Сопровождение и ИТ-аутсорсинг в режиме 24х7. </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#"></a></li><li class="flex-nav-next"><a class="flex-next" href="#"></a></li></ul></div>
+        </div>
+        <script>
+    $( document ).ready(function() {
+        $('.main-top-banner').flexslider({
+            animation: "fade",
+            controlNav: false,
+            prevText: "",
+            nextText: "",
+        });
+    });
+</script>
+
+        <!--//-->
+        <!--Industry Solutions-->
+        <div class="ind-sol-main">
+            <div class="ind-sol-list">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="sol-item active" id="sol-1207" data="1207">
+                            <div class="sol-info">
+                                <div class="sol-icon"></div>
+                                <div class="sol-name">Банки и финансовые организации</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="sol-item " id="sol-1208" data="1208">
+                            <div class="sol-info">
+                                <div class="sol-icon"></div>
+                                <div class="sol-name">Здравоохранение</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="sol-item " id="sol-1209" data="1209">
+                            <div class="sol-info">
+                                <div class="sol-icon"></div>
+                                <div class="sol-name">Образование</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="sol-item " id="sol-1210" data="1210">
+                            <div class="sol-info">
+                                <div class="sol-icon"></div>
+                                <div class="sol-name">Промышленность</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="sol-item " id="sol-1211" data="1211">
+                            <div class="sol-info">
+                                <div class="sol-icon"></div>
+                                <div class="sol-name">Государственное управление</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="sol-item " id="sol-1212" data="1212">
+                            <div class="sol-info">
+                                <div class="sol-icon"></div>
+                                <div class="sol-name">ТЭК</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+            $(".sol-item").on("click", function(){
+                id_num=$(this).attr("data");
+                $(".sol-detail").removeClass("active");
+                $(".sol-item").removeClass("active");
+                $(this).addClass("active");
+                $("#sol-detail-"+id_num).addClass("active");
+            });
+        </script>
+            <div class="sol-list-detail">
+
+                <div class="sol-detail active" id="sol-detail-1207">
+                    <div class="sol-d-title">Банки и финансовые организации</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="dec-title-main"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Решения</span></div>
+                            <div class="dec-list-main">
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/business-continuity/katastrofoustoychivost/">Катастрофоустойчивость и Резервный ЦОД</a>
+                                        <div class="dec-item-text-main">Катастрофоустойчивые решения Группы Компаний ХОСТ позволяют минимизировать плановые и внеплановые простои информационных систем предприятия, защищая от потери ЦОДа или его отдельных компонентов</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/data-centers/sistema-monitoringa-tsod/">Система мониторинга ЦОД</a>
+                                        <div class="dec-item-text-main">Решение по мониторингу инженерных систем ЦОД. Система осуществляет постоянный контроль, анализ и хранение сведений о критичных параметрах инженерной инфраструктуры, оповещает об аварийных ситуациях</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="dec-title-main blue"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Истории успеха</span></div>
+                            <div class="dec-list-main blue">
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/24ru/">Банк24.ру. Отказоустойчивая инфраструктура</a>
+                                        <div class="dec-item-text-main">Решение ГК ХОСТ обеспечивает непрерывность работы АБС «Банка24.ру» в режиме 24х7 с высокой производительностью.</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/zapsipcombank/">"Запсибкомбанк". Модернизация вычислительной инфраструктуры</a>
+                                        <div class="dec-item-text-main">Критичная для операционной работы процедура закрытия операционного дня банка сократилась с 4 часов до 50 минут</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/--1/">"СКБ-банк". Интеграция информационных систем и приложений</a>
+                                        <div class="dec-item-text-main">Запуск в эксплуатацию ГК ХОСТ интеграционной платформы позволил СКБ-банку повысить скорость вывода на рынок новых банковских продуктов, а также улучшить прозрачность и управляемость информационными системами.</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/ubrir-sistema-rezervnogo-kopirovaniya/">УБРиР. Система резервного копирования</a>
+                                        <div class="dec-item-text-main">Группа Компаний ХОСТ обеспечила централизованный контроль процессов резервного копирования и восстановления данных в Уральском банке реконструкции и развития. </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sol-detail " id="sol-detail-1208">
+                    <div class="sol-d-title">Информационные системы для здравоохранения</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="dec-title-main"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Решения</span></div>
+                            <div class="dec-list-main">
+
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a href="http://mis-region.ru/produkty/rias/">Региональная информационно-аналитическая система «Медведь»</a>                                                                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a href="http://mis-region.ru/produkty/integratsionnaya-shina/">Интеграционная шина</a>                                                                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a href="http://mis-region.ru/produkty/sistema-sbora-otchetnosti/">Система сбора отчетности</a>                                                                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a href="http://mis-region.ru/produkty/avtomatizatsiya/uchet-vysokotekhnologichnoy/">Учет высокотехнологичной и специализированной медицинской помощи</a>                                                                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a href="http://mis-region.ru/produkty/avtomatizatsiya/uchet-dispanserizatsii/">Учет диспансеризации детей сирот и детей, находящихся в сложной жизненной ситуации</a>                                                                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a href="http://mis-region.ru/produkty/avtomatizatsiya/registr-meditsinskikh-spravok/">Учет медицинских справок о допуске к управлению транспортным средством и разрешений на работу трудовым мигрантам</a>                                                                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a href="http://mis-region.ru/produkty/avtomatizatsiya/">Автоматизация других административных регламентов</a>                                                                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="dec-title-main blue"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Истории успеха</span></div>
+                            <div class="dec-list-main blue">
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/stavco/">Частная клиника «Ставко». Защита персональных данных</a>
+                                        <div class="dec-item-text-main">Более 15 000 пациентов клиники могут не беспокоиться за сохранность своих персональных данных.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sol-detail " id="sol-detail-1209">
+                    <div class="sol-d-title">Образование</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="dec-title-main"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Решения</span></div>
+                            <div class="dec-list-main">
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/business-continuity/virtualizatsiya-i-oblachnye-servisy/">Виртуализация и облачные сервисы</a>
+                                        <div class="dec-item-text-main">Решение по виртуализации серверов, приложений и созданию облачных сред для повышения производительности ИТ-инфраструктуры, ее управления и снижения совокупной стоимости владения.</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/data-centers/vychislitelnaya-infrastruktura/">Вычислительная инфраструктура</a>
+                                        <div class="dec-item-text-main">Комплекс услуг по проектированию и внедрению вычислительных систем любой сложности</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="dec-title-main blue"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Истории успеха</span></div>
+                            <div class="dec-list-main blue">
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/urfu-sistema-biznes-analiza-i-prognozirovaniya-kpi/">УрФУ. Система бизнес-анализа и прогнозирования KPI</a>
+                                        <div class="dec-item-text-main">Система бизнес-анализа и прогнозирования KPI для Уральского федерального университета. Система охватывает один миллион показателей и помогает контролировать достижение целей программы повышения престижа российского образования на мировой арене «5-100». </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sol-detail " id="sol-detail-1210">
+                    <div class="sol-d-title">Промышленность</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="dec-title-main"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Решения</span></div>
+                            <div class="dec-list-main">
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/support/soprovozhdenie-it-infrastruktury/">ИТ-аутсорсинг. Сопровождение ИТ-инфраструктуры</a>
+                                        <div class="dec-item-text-main">Эффективное управление и поддержка аппаратного и программного обеспечения в режиме 24х7 способны минимизировать возникающие риски и сократить возможные убытки</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/data-centers/sistema-monitoringa-tsod/">Система мониторинга ЦОД</a>
+                                        <div class="dec-item-text-main">Решение по мониторингу инженерных систем ЦОД. Система осуществляет постоянный контроль, анализ и хранение сведений о критичных параметрах инженерной инфраструктуры, оповещает об аварийных ситуациях</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/data-centers/setevye-resheniya/">Телекоммуникационные решения</a>
+                                        <div class="dec-item-text-main">Решение ГК ХОСТ в области телекоммуникаций включает реализацию корпоративных мультисервисных сетей передачи данных, создание IP-телефонии, контакт-центров, систем конференцсвязи</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="dec-title-main blue"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Истории успеха</span></div>
+                            <div class="dec-list-main blue">
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/tngg/">ТюменНИИгипрогаз. Отказо- и катастрофоустойчивое сетевое хранилище</a>
+                                        <div class="dec-item-text-main">Внедрение отказо- и катастрофоустойчивого сетевого хранилища данных и высокопроизводительной вычислительной платформы для сейсморазведки и открытия новых месторождений.</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/28/">Корпорация "ВСМПО-АВИСМА". Система управленческой отчетности</a>
+                                        <div class="dec-item-text-main">Корпорация "ВСМПО-АВИСМА" построила систему управленческой отчетности на платформе IBM Cognos</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sol-detail " id="sol-detail-1211">
+                    <div class="sol-d-title">Государственное управление</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="dec-title-main"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Решения</span></div>
+                            <div class="dec-list-main">
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/integration-of-information-systems/razumnyy-gorod/">Разумный город</a>
+                                        <div class="dec-item-text-main">Технологии разумного города на основе анализа больших объемов данных позволяют предвидеть проблемы, принимать контрмеры для их предотвращения, наладить эффективное взаимодействие людей и различных систем, оптимально распределять ресурсы (энергетические, водные, финансовые, трудовые).</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="dec-title-main blue"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Истории успеха</span></div>
+                            <div class="dec-list-main blue">
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/--1/">"СКБ-банк". Интеграция информационных систем и приложений</a>
+                                        <div class="dec-item-text-main">Запуск в эксплуатацию ГК ХОСТ интеграционной платформы позволил СКБ-банку повысить скорость вывода на рынок новых банковских продуктов, а также улучшить прозрачность и управляемость информационными системами.</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/28/">Корпорация "ВСМПО-АВИСМА". Система управленческой отчетности</a>
+                                        <div class="dec-item-text-main">Корпорация "ВСМПО-АВИСМА" построила систему управленческой отчетности на платформе IBM Cognos</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/29/">"Пермэнерго". Проектирование и строительство ЦОД</a>
+                                        <div class="dec-item-text-main">Группа Компаний ХОСТ построила в Пермэнерго» ЦОД для «Умного учета»</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/ubrir-sistema-rezervnogo-kopirovaniya/">УБРиР. Система резервного копирования</a>
+                                        <div class="dec-item-text-main">Группа Компаний ХОСТ обеспечила централизованный контроль процессов резервного копирования и восстановления данных в Уральском банке реконструкции и развития. </div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/urfu-sistema-biznes-analiza-i-prognozirovaniya-kpi/">УрФУ. Система бизнес-анализа и прогнозирования KPI</a>
+                                        <div class="dec-item-text-main">Система бизнес-анализа и прогнозирования KPI для Уральского федерального университета. Система охватывает один миллион показателей и помогает контролировать достижение целей программы повышения престижа российского образования на мировой арене «5-100». </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sol-detail " id="sol-detail-1212">
+                    <div class="sol-d-title">Топливно-энергетический комплекс</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="dec-title-main"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Решения</span></div>
+                            <div class="dec-list-main">
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/support/soprovozhdenie-it-infrastruktury/">ИТ-аутсорсинг. Сопровождение ИТ-инфраструктуры</a>
+                                        <div class="dec-item-text-main">Эффективное управление и поддержка аппаратного и программного обеспечения в режиме 24х7 способны минимизировать возникающие риски и сократить возможные убытки</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/data-centers/vychislitelnaya-infrastruktura/">Вычислительная инфраструктура</a>
+                                        <div class="dec-item-text-main">Комплекс услуг по проектированию и внедрению вычислительных систем любой сложности</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/data-centers/sistema-monitoringa-tsod/">Система мониторинга ЦОД</a>
+                                        <div class="dec-item-text-main">Решение по мониторингу инженерных систем ЦОД. Система осуществляет постоянный контроль, анализ и хранение сведений о критичных параметрах инженерной инфраструктуры, оповещает об аварийных ситуациях</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_2.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/decision/data-centers/setevye-resheniya/">Телекоммуникационные решения</a>
+                                        <div class="dec-item-text-main">Решение ГК ХОСТ в области телекоммуникаций включает реализацию корпоративных мультисервисных сетей передачи данных, создание IP-телефонии, контакт-центров, систем конференцсвязи</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="dec-title-main blue"><div class="dec-img-main"><img src="/bitrix/templates/hostco_new/images/main/mark_1.svg" alt=""></div><span>Истории успеха</span></div>
+                            <div class="dec-list-main blue">
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/mrsk-servero-zapada-vnedrenie-portala-dlya-obshcheniya-s-potrebitelyami/">"МРСК Серверо-Запада". Внедрение портала для общения с потребителями</a>
+                                        <div class="dec-item-text-main">Информированность собственника недвижимости находится в руках самого собственника: ни график работы почты, ни длительная командировка не помешают узнавать о начислениях и оплачивать услуги ЖКХ и потреблённую электроэнергию.</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/29/">"Пермэнерго". Проектирование и строительство ЦОД</a>
+                                        <div class="dec-item-text-main">Группа Компаний ХОСТ построила в Пермэнерго» ЦОД для «Умного учета»</div>
+                                    </div>
+                                </div>
+                                <div class="dec-item-main blue">
+                                    <div class="dec-item-icon-main">
+                                        <img src="/bitrix/templates/hostco_new/images/main/mark_3.svg" alt="">
+                                    </div>
+                                    <div class="dec-item-inner-main">
+                                        <a class="dec-item-title-main" href="/success-stories/permenergosbyt-vnedrenie-raspredelennoy-sistemy-rezervnogo-kopirovaniya/">"Пермэнергосбыт". Внедрение распределенной системы резервного копирования</a>
+                                        <div class="dec-item-text-main">Надежное хранение критичной информации об учете электроэнергии на двух распределенных площадках при ограниченном бюджете.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>#sol-1207 .sol-icon{background-image:url('/upload/iblock/1f1/1f1c9159d9232950c6a99b3c47e29b98.svg')}
+#sol-1208 .sol-icon{background-image:url('/upload/iblock/e8e/e8eed6f780e7fe83344ab90bfd75b922.svg')}
+#sol-1209 .sol-icon{background-image:url('/upload/iblock/25e/25e94005fc405661c8883a0dcb30eaf4.svg')}
+#sol-1210 .sol-icon{background-image:url('/upload/iblock/cd3/cd3e2d2739bb0e4151a080980899dd8a.svg')}
+#sol-1211 .sol-icon{background-image:url('/upload/iblock/dc9/dc9c1caba1d6f12be9ad184a0c6847b2.svg')}
+#sol-1212 .sol-icon{background-image:url('/upload/iblock/09e/09e287588e365b4e428703dfc8b55fb6.svg')}
+</style>
+        <style>#sol-1207:hover .sol-info > .sol-icon{background-image:url('/upload/iblock/5bf/5bf37289538fb38a0c226b2713626f11.svg')}
+#sol-1208:hover .sol-info > .sol-icon{background-image:url('/upload/iblock/338/338145f8045276588a41d19fd788fe39.svg')}
+#sol-1209:hover .sol-info > .sol-icon{background-image:url('/upload/iblock/699/699561c340aa7d867126c1478e7ce68c.svg')}
+#sol-1210:hover .sol-info > .sol-icon{background-image:url('/upload/iblock/151/151a0a8bf76f93b227a6244d5b3a95c5.svg')}
+#sol-1211:hover .sol-info > .sol-icon{background-image:url('/upload/iblock/036/036e43d187286c4f6198a22690bb43aa.svg')}
+#sol-1212:hover .sol-info > .sol-icon{background-image:url('/upload/iblock/b84/b84a3b961594112ae258805329ab378a.svg')}
+</style>
+        <style>#sol-1207.active .sol-icon{background-image:url('/upload/iblock/5bf/5bf37289538fb38a0c226b2713626f11.svg')}
+#sol-1208.active .sol-icon{background-image:url('/upload/iblock/338/338145f8045276588a41d19fd788fe39.svg')}
+#sol-1209.active .sol-icon{background-image:url('/upload/iblock/699/699561c340aa7d867126c1478e7ce68c.svg')}
+#sol-1210.active .sol-icon{background-image:url('/upload/iblock/151/151a0a8bf76f93b227a6244d5b3a95c5.svg')}
+#sol-1211.active .sol-icon{background-image:url('/upload/iblock/036/036e43d187286c4f6198a22690bb43aa.svg')}
+#sol-1212.active .sol-icon{background-image:url('/upload/iblock/b84/b84a3b961594112ae258805329ab378a.svg')}
+</style>
+        <!--//-->
+
+        <!--ABOUT COMPANY-->
+        <div class="about-company-main">
+            <div class="sol-d-title">О компании</div>
+            <div class="row">
+                <div class="col-md-7 order-md-0 order-1">
+
+                    <div class="about-main-txt">
+                        <p>
+                            Группа Компаний ХОСТ – российский системный интегратор и разработчик информационных систем для государственных и коммерческих структур.
+                        </p>
+                        <p>
+                            Почти 30 лет наша команда проектирует, создает и сопровождает ИТ-инфраструктуру для банков, промышленных предприятий, топливно-энергетических компаний, органов власти и здравоохранения. За это время выполнила проекты более чем для 2 тысяч организаций на территории 18 субъектов Российской Федерации и стран СНГ.
+                        </p>                    <br>
+                        <a href="/aboutcompany/" class="btn btn-warning footer-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-md-5 order-md-1 order-0">
+                    <div class="about-slider">
+                        <div class="about-img"><img src="/bitrix/templates/hostco_new/images/main/about_1.svg?v=1.2" alt=""></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--//-->
+
+        <!--Нам доверяют -->
+        <div class="main-clients">
+            <div class="sol-d-title">Нам доверяют</div>
+            <script>
+    $( document ).ready(function() {
+  $('.carusel .flexslider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    prevText: "",
+    nextText: "",
+    itemWidth: 210,
+    itemMargin: 5,
+    move: 1,
+    slideshow: true,
+    slideshowSpeed: 3000,
+  });
+});
+</script>
+            <div class="carusel">
+                <div class="flexslider">
+                    <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 2000%; transition-duration: 0s; transform: translate3d(-645px, 0px, 0px);">
+                        <li id="bx_651765591_577" style="margin-right: 5px; float: left; display: block; width: 210px;"><img data-load="false" src="/upload/iblock/c7e/c7e4a42cf56d3e43b1de4f4beb18a1ae.png" alt="СПБГУ" draggable="false"></li>
+                        <li id="bx_651765591_576" style="margin-right: 5px; float: left; display: block; width: 210px;"><img data-load="false" src="/upload/iblock/93d/93dcec2ba6812d60f9e8247e133133f0.png" alt="Сургут" draggable="false"></li>
+                        <li id="bx_651765591_575" style="margin-right: 5px; float: left; display: block; width: 210px;"><img data-load="false" src="/upload/iblock/0c1/0c18e69ae1839d6804a9e93d33d27015.png" alt="УрФУ" draggable="false"></li>
+                        <li id="bx_651765591_574" style="margin-right: 5px; float: left; display: block; width: 210px;"><img data-load="false" src="/upload/iblock/a0a/a0a24b11837482da26a8970629a762ff.png" alt="Альфа-Банк" draggable="false"></li>
+                        <li id="bx_651765591_573" style="margin-right: 5px; float: left; display: block; width: 210px;"><img data-load="false" src="/upload/iblock/da2/da230ae5cf72cc3619b56bc6a05f8e23.png" alt="АТБ банк" draggable="false"></li>
+                        <li id="bx_651765591_571" style="margin-right: 5px; float: left; display: block; width: 210px;"><img data-load="false" src="/upload/iblock/a19/a195ec767c07e15738fb8ed3d89689da.png" alt="ВТБ 24" draggable="false"></li>
+                        <li id="bx_651765591_570" style="margin-right: 5px; float: left; display: block; width: 210px;"><img data-load="false" src="/upload/iblock/1a6/1a67a3d492dca7658a7f87e6f4524763.png" alt="Единый Расчетный Центр" draggable="false"></li>
+                        <li id="bx_651765591_569" style="margin-right: 5px; float: left; display: block; width: 210px;"><img data-load="false" src="/upload/iblock/5ce/5ce130cd77ded644b293802e5d0a353d.png" alt="Запсибкомбанк" draggable="false"></li>
+                        <li id="bx_651765591_568" style="margin-right: 5px; float: left; display: block; width: 210px;"><img data-load="false" src="/upload/iblock/57f/57f8d2afe067e6b9c8327061782dc763.png" alt="Клюква" draggable="false"></li>
+                        <li id="bx_651765591_567" style="margin-right: 5px; float: left; display: block; width: 210px;"><img data-load="false" src="/upload/iblock/f07/f079ec7b6e8fd6235d871fef4aae0c61.png" alt="Кольцо Урала" draggable="false"></li>
+                    </ul></div><ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#"></a></li><li class="flex-nav-next"><a class="flex-next" href="#"></a></li></ul></div></div>
+
+        </div>
+        <!--//-->
+
+        <!--Форма обратной связи-->
+    </div>
+    <div class="main-page-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-img">
+                        <img src="/bitrix/templates/hostco_new/images/main/main_form_1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8">
+
+                    <div id="comp_45c8bf9370df1c73ad9b27bbfc736c82">
+
+                        <div class="sol-d-title">Оставьте заявку на консультацию</div>
+                        <div class="popup-form">
+
+                            <form name="feedback" action="/" method="POST" enctype="multipart/form-data"><input type="hidden" name="bxajaxid" id="bxajaxid_45c8bf9370df1c73ad9b27bbfc736c82_8BACKi" value="45c8bf9370df1c73ad9b27bbfc736c82"><input type="hidden" name="AJAX_CALL" value="Y"><script type="text/javascript">
+function _processform_8BACKi(){
+	if (BX('bxajaxid_45c8bf9370df1c73ad9b27bbfc736c82_8BACKi'))
+	{
+		var obForm = BX('bxajaxid_45c8bf9370df1c73ad9b27bbfc736c82_8BACKi').form;
+		BX.bind(obForm, 'submit', function() {BX.ajax.submitComponentForm(this, 'comp_45c8bf9370df1c73ad9b27bbfc736c82', true)});
+	}
+	BX.removeCustomEvent('onAjaxSuccess', _processform_8BACKi);
+}
+if (BX('bxajaxid_45c8bf9370df1c73ad9b27bbfc736c82_8BACKi'))
+	_processform_8BACKi();
+else
+	BX.addCustomEvent('onAjaxSuccess', _processform_8BACKi);
+</script><input type="hidden" name="sessid" id="sessid" value="f6af7425f49022be6fa30924fdcdd6d7"><input type="hidden" name="WEB_FORM_ID" value="52">
+
+
+                                <div class="form-row">
+                                    <div class="col-6 ">
+                                        <input type="text" required="" class="form-control" placeholder="ФИО*" name="form_text_410" value="">      </div>
+                                    <div class="col-6 ">
+                                        <input type="text" data-mask="phone" class="form-control" placeholder="Телефон" name="form_text_411" value="">      </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-6 ">
+                                        <input type="text" required="" class="form-control" placeholder="E-mail*" name="form_email_412" value="" size="0">      </div>
+                                    <div class="col-6 ">
+                                        <input type="text" class="form-control" placeholder="Название компании" name="form_text_409" value="">      </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-12 ">
+                                        <input type="text" required="" class="form-control" placeholder="Вопрос*" name="form_text_413" value="">      </div>
+                                </div>
+                                <input type="hidden" name="captcha_sid" value="0132ac86a2171a6b48a52bd12f928c30">
+
+                                <br>
+                                <div class="form-row">
+                                    <div class="col-6">
+                                        <div class="capcha-img">
+                                            <img src="/bitrix/tools/captcha.php?captcha_sid=0132ac86a2171a6b48a52bd12f928c30" width="180" height="40">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 ">
+                                        <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="form-control" placeholder="Введите символы с картинки*">
+                                    </div>
+                                </div>
+                                <div class="form-item-t1 form-group">
+                                    <label for="processing_approval">
+                                        <input type="checkbox" required="" id="processing_approval" class="checkbox option-input" name="processing_approval">
+                                        Я согласен на <a href="/processing/" target="_blank" rel="nofollow">обработку персональных данных</a>
+                                    </label>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <div class="text-right btns-block">
+                                        <button class="btn btn-warning btn-md txt-ico-btn" name="web_form_submit" value="Отправить"><span>Отправить</span><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <div>
+                                </div>
+                            </form></div>
+
+                    </div>                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!--//-->
+
+        <!--NEWS MAIN-->
+        <div class="news-main-page">
+            <div class="sol-d-title">Новости</div>
+            <div class="news_main">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="news_item" id="bx_1373509569_2502">
+                            <div class="news-img"><img src="/upload/iblock/930/93008126e5369e419e6784bf7810fcee.jpg" alt=""></div>
+                            <div class="news_date">21. июл., 2021</div>
+                            <div class="news-title"><a href="/news/novosoft-i-hostvm-obyavili-ob-uspeshnom-zavershenii-proverki-sovmestimosti-/">Новософт и HOSTVM объявили об успешном завершении проверки совместимости </a></div>
+                            <div class="news-anons"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news_item" id="bx_1373509569_2500">
+                            <div class="news-img"><img src="/upload/iblock/f01/f0181673e213f21ad43936553e29d242.jpeg" alt=""></div>
+                            <div class="news_date">15. июл., 2021</div>
+                            <div class="news-title"><a href="/news/sbermedii-i-gruppa-kompaniy-khost-zayavili-o-strategicheskom-partnerstve/">СберМедИИ и Группа Компаний ХОСТ заявили о стратегическом партнерстве</a></div>
+                            <div class="news-anons"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news_item" id="bx_1373509569_2499">
+                            <div class="news-img"><img src="/upload/iblock/ac0/ac0ca5e5830287b32beaf0386c0f36cf.jpeg" alt=""></div>
+                            <div class="news_date">05. июл., 2021</div>
+                            <div class="news-title"><a href="/news/tsifrovizatsiya-zdravookhraneniya-proshla-etap-pervichnoy-avtomatizatsii/">Цифровизация здравоохранения прошла этап первичной автоматизации</a></div>
+                            <div class="news-anons"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!--//-->
+    </div>
+</div>
+
+
+<div th:insert ="blocks/footer :: footer"></div>
+</body>
+</html>
